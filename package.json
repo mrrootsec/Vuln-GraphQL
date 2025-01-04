@@ -1,0 +1,19 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "apollo-server": "^3.13.0",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "sqlite3": "^5.1.7",
+    "uuid": "^11.0.3"
+  }
+}
