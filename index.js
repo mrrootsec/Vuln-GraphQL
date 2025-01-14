@@ -32,6 +32,15 @@ db.serialize(() => {
     )
   `);
 
+  db.run(`
+    CREATE TABLE rsvp (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      event_id TEXT,
+      user_id TEXT,
+      UNIQUE(event_id, user_id) ON CONFLICT IGNORE
+    )
+  `);
+
   const users = [
     { name: 'admin', email: 'admin@hack.org', phone: '7894561230', isAdmin: 1 },
     { name: 'peter', email: 'peter@hack.org', phone: '0987654321', isAdmin: 0 },
