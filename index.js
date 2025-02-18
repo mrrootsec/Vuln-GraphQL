@@ -92,7 +92,7 @@ const server = new ApolloServer({
     message: err.message,
     code: err.extensions?.code || 'INTERNAL_SERVER_ERROR',
   }),
-  introspection: false, // Enables or Disable introspection queries
+  introspection: true, // Enables or Disable introspection queries
 });
 
 // Async function to start the server
